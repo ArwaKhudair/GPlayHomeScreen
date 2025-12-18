@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+    
+    <TextView
+        android:id="@+id/num_sm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_img_sm"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@id/num_sm"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp">
+        
+        <ImageView
+            android:id="@+id/img_sm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/black" />
+    </com.google.android.material.card.MaterialCardView>
+    
+    <TextView
+        android:id="@+id/game_sm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/card_img_sm"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Block Blast!"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+    
+    <TextView
+        android:id="@+id/name1_sm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@id/card_img_sm"
+        android:layout_marginStart="12dp"
+        android:text="Puzzle • Block • Casual"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/card_img_sm"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <TextView
+            android:id="@+id/t_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="2dp"/>
+        
+        <RatingBar
+            android:id="@+id/rating_bar_sm"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="1"
+            android:rating="1"
+            android:progressTint="#4CAF50"
+            android:layout_marginEnd="8dp"/>
+        
+        <TextView
+            android:id="@+id/M_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="161 MB"
+            android:textSize="12sp"
+            android:textColor="#666666"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_below="@id/card_img_sm"
+        android:layout_marginTop="15dp"/>
+
+
+
+</RelativeLayout>
