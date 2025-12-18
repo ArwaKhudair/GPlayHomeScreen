@@ -4,7 +4,7 @@ Android application recreating Google Play Store's top games list interface.
 
 ## Preview
 
-https://github.com/user-attachments/assets/preview.mp4
+![App Preview](assets/preview.gif)
 
 ## Features
 
